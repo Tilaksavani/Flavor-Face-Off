@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Feedback Form</title>
+  <link rel="stylesheet" href="./public/bootstrap-offline/css/bootstrap.css" />
+  <link rel="stylesheet" href="./public/bootstrap-offline/css/style.css" />
+  <script src="./public/bootstrap-offline/js/bootstrap.js"></script>
+  <script src="./public/bootstrap-offline/js/jquery-3.6.0.js"></script>
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script> -->
+  <style>
+    h3 {
+      font-weight: bold;
+    }
+
+    #charusat_img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+
+    }
+
+    p {
+      font-weight: 500;
+      font-size: 18px;
+      text-align: left;
+      margin-left: 30px;
+    }
+
+    select {
+      width: 100%;
+      height: 40px;
+      border-radius: 4px;
+      border-color: #c6c3c3;
+    }
+
+    #Participant_1,
+    Participant_2,
+    Participant_3 {
+      font-size: 18px;
+    }
+
+    .btn {
+      -webkit-border-radius: 5;
+      -moz-border-radius: 5;
+      border-radius: 5px;
+      font-family: Arial;
+      color: #ffffff;
+      font-size: 15px;
+      background: #1899f0;
+      padding: 8px 16px 8px 16px;
+      text-decoration: none;
+    }
+  </style>
+</head>
+
+<body>
+  <section id="form-section">
+    <img src="./public/images/charusat.png" class="img-fluid" alt="Responsive image" id="charusat_img" />
+    <div>
+      <h3 class="text-center mb-4">
+        <u><i>FLAVOR Face-off ” - Cooking and Baking Competition for Female Entrepreneur</i></u>
+        <br /><br />
+        <p>
+          <b><i>FLAVOR Face-off ” - Cooking and Baking Competition for Female Entrepreneur</i></b> is a competition for
+          female staff (all cadre) and female students of CHARUSAT. The primary objective of this event is to prepare
+          Novel
+          dish in the competition and sell them and foster a sense of unity, gratitude, inclusiveness and show female
+          entrepreneur
+          enthusiasm withinthe CHARUSAT community. After the competition, the dishes prepared by the female students
+          will be sell by them selves
+          and show their amount collection based on their dishes.
+        </p>
+      </h3>
+    </div>
+
+
+    <form name="submit-to-google-sheet" class="form-content-section" action="/" method="post">
+      <div class="form-group">
+        <label for="Team_Name" class="form-label">Give a Name to Your Team:</label>
+        <input name="Team_Name" type="text" class="form-control" id="name" required />
+      </div>
+
+      <br>
+      <!-- Participant 1 -->
+      <div class="form-group">
+        <label for="Participant_1" class="form-label" id="Participant_1"><u>Participant 1 Details</u></label><br>
+        <label for="Participant_1_Name" class="form-label">Name(CAPITAL LETTERS):</label>
+        <input name="Participant_1_Name" type="text" class="form-control" id="Emp_Name" required />
+        <label for="Participant_1_ID" class="form-label">Employee ID/Student ID:</label>
+        <input name="Participant_1_ID" type="text" class="form-control" id="Emp_ID" required />
+        <label for="Participant_1_Institute" class="form-label">Institute:</label><br>
+        <select name="Participant_1_Institute" id="Emp_Institute" required>
+          <option value="CSPIT">CSPIT</option>
+          <option value="DEPSTAR">DEPSTAR</option>
+          <option value="RPCP">RPCP</option>
+          <option value="CMPICA">CMPICA</option>
+          <option value="IIIM">IIIM</option>
+          <option value="PDPIAS">PDPIAS</option>
+          <option value="MTIN">MTIN</option>
+          <option value="ARIP">ARIP</option>
+          <option value="BDPIPS">BDPIPS</option>
+        </select>
+        <br>
+        <label for="Participant_1_Contact" class="form-label">Mobile No:</label>
+        <input name="Participant_1_Contact" type="text" class="form-control" id="Emp_Number" required />
+        <label for="Participant_1_Email" class="form-label">E-mail:</label>
+        <input name="Participant_1_Email" type="email" class="form-control" id="Emp_Email" required />
+      </div>
+
+      <br>
+      <!-- Participant 2 -->
+      <div class="form-group">
+        <label for="Participant_2" class="form-label" id="Participant_2"><u>Participant 2 Details</u></label><br>
+        <label for="Participant_2_Name" class="form-label">Name(CAPITAL LETTERS):</label>
+        <input name="Participant_2_Name" type="text" class="form-control" id="Emp_Name" required />
+        <label for="Participant_2_ID" class="form-label">Employee ID/Student ID:</label>
+        <input name="Participant_2_ID" type="text" class="form-control" id="Emp_ID" required />
+        <label for="Participant_2_Institute" class="form-label">Institute:</label><br>
+        <select name="Participant_2_Institute" id="Emp_Institute" required>
+          <option value="CSPIT">CSPIT</option>
+          <option value="DEPSTAR">DEPSTAR</option>
+          <option value="RPCP">RPCP</option>
+          <option value="CMPICA">CMPICA</option>
+          <option value="IIIM">IIIM</option>
+          <option value="PDPIAS">PDPIAS</option>
+          <option value="MTIN">MTIN</option>
+          <option value="ARIP">ARIP</option>
+          <option value="BDPIPS">BDPIPS</option>
+        </select>
+        <br>
+        <label for="Participant_2_Contact" class="form-label">Mobile No:</label>
+        <input name="Participant_2_Contact" type="text" class="form-control" id="Emp_Number" required />
+        <label for="Participant_2_Email" class="form-label">E-mail:</label>
+        <input name="Participant_2_Email" type="email" class="form-control" id="Emp_Email" required />
+      </div>
+
+      <br>
+      <!-- Participant 3 -->
+      <div class="form-group">
+        <label for="Participant_3" class="form-label" id="Participant_3"><u>Participant 3 Details</u></label><br>
+        <label for="Participant_3_Name" class="form-label">Name(CAPITAL LETTERS):</label>
+        <input name="Participant_3_Name" type="text" class="form-control" id="Emp_Name" required />
+        <label for="Participant_3_ID" class="form-label">Employee ID/Student ID:</label>
+        <input name="Participant_3_ID" type="text" class="form-control" id="Emp_ID" required />
+        <label for="Participant_3_Institute" class="form-label">Institute:</label><br>
+        <select name="Participant_3_Institute" id="Emp_Institute" required>
+          <option value="CSPIT">CSPIT</option>
+          <option value="DEPSTAR">DEPSTAR</option>
+          <option value="RPCP">RPCP</option>
+          <option value="CMPICA">CMPICA</option>
+          <option value="IIIM">IIIM</option>
+          <option value="PDPIAS">PDPIAS</option>
+          <option value="MTIN">MTIN</option>
+          <option value="ARIP">ARIP</option>
+          <option value="BDPIPS">BDPIPS</option>
+        </select>
+        <br>
+        <label for="Participant_3_Contact" class="form-label">Mobile No:</label>
+        <input name="Participant_3_Contact" type="text" class="form-control" id="Emp_Number" required />
+        <label for="Participant_3_Email" class="form-label">E-mail:</label>
+        <input name="Participant_3_Email" type="email" class="form-control" id="Emp_Email" required />
+      </div>
+
+
+
+      <br />
+      <input type="submit" name="submit" class="btn" />
+      <br />
+      <span id="success"></span>
+    </form>
+  </section>
+
+  <script>
+    const scriptURL =
+      "https://script.google.com/macros/s/AKfycbyUDrk6_6Ywh50CdngeB9b3WCDNjxjJTAivjuaRGEbL32LuVC_dreyEHVDadYM_8P5A/exec";
+    const form = document.forms["submit-to-google-sheet"];
+
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+      fetch(scriptURL, { method: "POST", body: new FormData(form) })
+        .then((response) => {
+          if (response.status === 200) {
+            window.location.href = "success.html"; // Redirect to success page
+          } else {
+            window.location.href = "failure.html"; // Redirect to failure page
+          }
+        })
+        .catch((error) => {
+          console.error("Error!", error.message);
+          window.location.href = "failure.html"; // Redirect to failure page
+        });
+    });
+  </script>
+</body>
+
+</html>
